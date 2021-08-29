@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,700');
+
+/*************** Global Styles ***************/ 
+
+html, body {
+    background-color: #e3e3e3;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: #fefefe;
+    font-family: Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #0a0a0a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Lato", sans-serif !important;
+    font-weight: 900 !important;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.4;
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+h4 {
+    font-size: 1.125rem;
+}
+
+
+.wrapper {
+    background: #e3e3e3;
+}
+
+
+
+/*************** About ***************/
+
+
+
+#about {
+    margin-top: 10em;
+    border: 1px solid #eee;
+    background-color: white;
+    padding-bottom: 1em;
+}
+
+.row {
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row::after, .row::before {
+    display: table;
+    content: " ";
+}
+
+.row::after {
+    clear: both;
+}
+
+*, :after, :before {
+    box-sizing: inherit;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.small-12 {
+    width: 100%;
+}
+
+.columns {
+    width: 100%;
+    float: left;
+    padding-left: .625rem;
+    padding-right: .625rem;
+}
+
+.profile-photo {
+    background-image: url(img/profile.JPG);
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-size: cover;
+    margin-top: -100px;
+    margin-bottom: 40px;
+}
+
+#about .details {
+    margin-top: -2em;
+}
+
+#about h2 {
+    color: #646464;
+    font-size: 3.8em;
+    padding-bottom: 1em;
+}
+
+#writing-text {
+    color: rgb(255, 255, 255);
+    background-color: rgb(200, 65, 43);
+    font-weight: 300;
+    font-size: .7em;
+}
+
+.cta .cta-button {
+    color: #cc4b37;
+    text-transform: uppercase;
+    border: 2px solid rgba(255, 103, 68, 0.91);
+    border-radius: 50px;
+    background: white;
+}
+
+.my-button {
+    font-size: 1em;
+    line-height: normal;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out, color 0.2s 0.3s;
+    letter-spacing: 0;
+    border-radius: 45px;
+    height: auto;
+    padding: .8em 2.1em;
+}
+
+.cta .cta-button:hover, .cta .cta-button:focus {
+    box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 14px 1px rgb(0 0 0 / 15%);
+    background-color: rgba(255, 103, 68, 0.91);
+    color: white;
+}
+
+.my-button:hover {
+    cursor: pointer;
+    padding: .8em 2.7em;
+}
+
+a {
+    line-height: #1779ba;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:active, a:hover {
+    outline-width: 0;
+}
+
+#about i {
+    margin-top: 2em;
+}
+
+.link-logos i {
+    color: grey;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.fab, .far {
+    font-weight: 400;
+}
+
+.fab {
+    font-weight: "Font Awesome 5 Brands";
+}
+
+.fa, .fab, .fad, .fal, .far, .fas {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+@media print, screen and (min-width: 40em) {
+    .columns {
+        padding-left: .9375rem;
+        padding-right: .9375rem;
+    }
+}
+
+@media print, screen and (min-width: 40em) {
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media print, screen and (min-width: 64em) {
+    .large-8 {
+        width: 66.66667%;
+    }
+}
+
+@media print, screen and (min-width: 64em) {
+    .large-offset-2 {
+        margin-left: 16.66667%;
+    }
+}
+
+
+/*************** My Skills ***************/
+
+#experience {
+    background-color: #4c6d86;
+    padding: 6em 4em 5.6em;
+}
+
+.column.row.row, .row.row.columns {
+    float: none;
+}
+
+#experience h2 {
+    color: #fff;
+    margin-bottom: 2em;
+}
+
+#experience i {
+    color: rgb(255, 138, 89);
+    font-size: 3.5em;
+    margin-bottom: .4em;
+}
+
+#experience h3 {
+    color: #fff;
+}
+
+#experience ul {
+    padding: 0;
+    margin-bottom: 3em;
+}
+
+#experience ul li {
+    list-style: none;
+    color: #bbd2ff;
+    font-family: "Maven pro", sans-serif;
+    font-weight: 500;
+    font-size: inherit;
+}
+
+@media print, screen and (min-width: 40em) {
+    .medium-4 {
+        width: 33.33333%;
+    }
+}
+
+@media print, screen and (min-width: 40em) {
+    h3 {
+        font-size: 1.9375rem;
+    }
+}
+
+
+/*************** Work ***************/
+
+#work {
+    padding: 6em 4em 3em;
+    background-color: #fff;
+}
+
+#work h2 {
+    color: #ff6945;
+    margin-bottom: .7em;
+}
+
+#work .tag-line {
+    color: #767779;
+    font-size: 1.4em;
+    margin-bottom: 4em;
+}
+
+#work .work-row {
+    margin-bottom: 5.5em;
+}
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    border-style: none;
+}
+
+.details h3 {
+    color: #738182;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+.details i {
+    color: #ff7654;
+    margin-right: 1em;
+}
+
+.column:last-child:not(:first-child), 
+.columns:last-child:not(:first-child) {
+    float: right;
+}
+
+.details .platform {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    margin: 2em 0 -0.1em;
+    font-family: "Maven pro", sans-serif;
+    font-weight: 500;
+    color: #ff7654;
+}
+
+.details p {
+    color: #738182;
+    font-family: "Maven pro", sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 1.8em;
+    line-height: 1.6;
+}
+
+.button-with-link {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 1rem;
+    padding: .85em 1em;
+    -webkit-appearance: none;
+    border: 1px solid transparent;
+    border-radius: 0;
+    transition: background-color .25s ease-out, color .25s ease-out;
+    font-size: .9rem;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+    color: #fefefe;
+}
+
+.details a, .details a:link, .details a:active {
+    color: rgba(255, 103, 68, 0.91);
+    border: 2px solid rgba(255, 103, 68, 0.91) !important;
+    background-color: #fff;
+}
+
+.details a:hover, .details a:focus {
+    box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 14px 1px rgb(0 0 0 / 15%);
+    background-color: rgba(255, 103, 68, 0.91) !important;
+    color: #fff;
+}
+
+@media print, screen and (min-width: 40em) {
+    .medium-push-6 {
+        position: relative;
+        left: 50%;
+    }
+}
+
+@media print, screen and (min-width: 40em) {
+    .medium-6 {
+        width: 50%;
+    }
+}
+
+@media print, screen and (min-width: 40em) {
+    .medium-pull-7 {
+        position: relative;
+        left: -58.33333%;
+    }
+}
+
+@media print, screen and (min-width: 40em) {
+    .medium-5 {
+        width: 41.66667%;
+    }
+    .medium-offset-1 {
+        margin-left: 8.33333%;
+    }
+}
+
+@media print, screen and (min-width: 40em) {
+    h4 {
+        font-size: 1.5625rem;
+    }
+}
+
+
+/*************** Services ***************/
+
+#services {
+    background: #111;
+    padding: 100px 0;
+}
+
+#services h2, h3 {
+    color: #fff;
+}
+
+#services .text-center {
+    font-size: 40px;
+}
+
+.max-width{
+    padding: 0 80px;
+}
+
+.serv-content, .skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services .serv-content .card {
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.services .serv-content .card .box {
+    transition: all .3s ease;
+}
+
+.services .serv-content .card:hover .box {
+    transform:  scale(1.05);
+}
+
+.services .serv-content .card i {
+    font-size: 50px;
+    color: crimson;
+}
+
+.services .serv-content .card:hover i {
+    color: #fff;
+}
+
+.services .serv-content .card:hover {
+    background: crimson;
+}
+
+.services .text-center {
+    margin-bottom: 60px;
+}
+
+.services .box h3 {
+    font-size: 25px;
+    margin: 10px 0 7px;
+}
+
+.services .box p {
+    color: #fff;
+    font-family: "Maven pro", sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 1.8em;
+    line-height: 1.6;
+}
+
+
+@media print, screen and (max-width: 947px) {
+    .max-width {
+        max-width: 930px;
+    }
+}
+
+@media print, screen and (max-width: 947px) {
+    .services .serv-content .card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+
+@media print, screen and (max-width: 991px) {
+    .max-width {
+        padding: 0 50px;
+    }
+}
+
+@media print, screen and (max-width: 690px) {
+    .services .serv-content .card {
+        width: 100%;
+    }
+}
+
+
+/*************** Services ***************/
+
+#skills {
+    background: white;
+    padding: 100px 0;
+}
+
+.skills .text-center {
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+.skills .skills-content .column {
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skills .skills-content .left p {
+    text-align: justify;
+}
+
+.skills .skills-content .left a {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all .3s ease;
+}
+
+.skills .skills-content .right .bars {
+    margin-bottom: 15px;
+}
+
+.skills .skills-content .right .info {
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .right span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills .skills-content .right .line {
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+
+.skills .skills-content .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+
+.skills-content .right .html::before {
+    width: 100%;
+}
+
+.skills-content .right .css::before {
+    width: 80%;
+}
+
+.skills-content .right .js::before {
+    width: 60%;
+}
+
+.skills-content .right .php::before {
+    width: 40%;
+}
+
+.skills-content .right .mysql::before {
+    width: 70%;
+}
+
+@media print, screen and (max-width: 947px) {
+    .skills .skills-content .column {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+
+
+/*************** Footer-cta ***************/
+
+#footer-cta {
+    background-color: rgba(255, 103, 68, 0.91);
+    padding: 6em 4em 5.6em;
+}
+
+#footer-cta h2 {
+    color: white;
+}
+
+#startButtonDiv {
+    margin-top: 3em;
+}
+
+#footer-cta a {
+    border: 2px solid #fff;
+    border-radius: 45px;
+    color: #fff;
+}
+
+#footer-cta a:hover {
+    background: #fff;
+    color: rgba(255, 103, 68, 0.91);
+    box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 14px 1px rgb(0 0 0 / 15%);
+}
+
+
+/*************** Footer-cta ***************/
+
+#footer {
+    padding: 5em 4em 2em;
+}
+
+#footer #logo {
+    background-color: rgba(255, 103, 68, 0.91);
+    border-radius: 50%;
+    color: #fff;
+    padding: .4em;
+    font-family: "Maven pro", sans-serif;
+    font-size: 1.6em;
+    font-weight: 500;
+    display: inline;
+}
+
+#footer #copyright {
+    margin-top: 1.6em;
+    font-family: "Maven pro", sans-serif;
+    font-weight: 500;
+    color: #7d7d7d;
+}
+
+@media print, screen and (min-width: 40em) {
+    .medium-offset-3 {
+        margin-left: 25%;
+    }
+}
